@@ -95,6 +95,12 @@
 
       Datasources folder's dart files implement the repos of data layer.  This is the actual of implementation that's get triggerd from usecases of domain layer.
 
+      They are the implementation of the domain layer's repo. Domain layer's repos are abstract classes
+
+   **xiv) How does presentation layer reaches to domain layer?**
+
+      Presentation layer does it through usecases. Usecases use something called callable() method in dart to reach to the repos of domain layer.
+
     
 
 
