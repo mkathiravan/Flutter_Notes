@@ -18,3 +18,29 @@
                color: Colors.blue
                )
           )
+
+### Wrap:
+
+It is used to arrange its child widgets dynamically in a horizontal or vertical direction.
+
+Customize the appearance and behaviour of the wrap using properties provided by Wrap.
+
+Key Features: Dynamic arrangement, Flexible layout, Customizataion.
+
+    Wrap(
+     children: <Widget>[
+       Container(
+        width: 100,
+          color: Colors.red,
+       ),
+        Container(
+          width: 100,
+         color: Colors.green,
+        ),
+       Container(
+          width: 100,
+         color: Colors.blue,
+        ),
+      ],
+     )
+
