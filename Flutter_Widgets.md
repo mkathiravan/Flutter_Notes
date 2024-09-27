@@ -9,3 +9,12 @@
   Customize text apperarnce using text styles.
 
   Control text alignment within its container.
+
+          Text(
+             'Hello Flutter!',
+             style: TextStyle(
+               fontSize: 24.0,
+               fontWeight: FontWeight.bold,
+               color: Colors.blue
+               )
+          )
