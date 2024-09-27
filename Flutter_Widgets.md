@@ -148,6 +148,31 @@ Example 2:
            alignment: Alignment.center
         )
 
+### vi) Icon:
+
+It is used to display icon from various icon libraries.
+
+Key Features:
+
+Icon Libraries: Access icons from Material Icons, Cupertino Icons, and custom icon sets.
+
+Icon Size and Color: Customize the size and color of icons to match your app's theme.
+
+Icon Alignment: Align icon with their containers horizontally and vertically.
+
+          Icon(
+          	Icons.favorite,
+          	size: 48.0,
+          	color: Colors.red,
+           )
+          
+          Icon(
+          	MyCustomIcon.myIcon,
+          	size: 48.0,
+          	color: Colors.blue
+          )
+        
+
 ### iii) Wrap:
 
 It is used to arrange its child widgets dynamically in a horizontal or vertical direction.
