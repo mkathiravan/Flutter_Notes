@@ -62,7 +62,49 @@ Example2:
               ]
               )
 
-        
+
+### iii) Column:      
+
+It is used to arrange child widgets in vertical direction.
+
+ Key Features:
+
+ Alignment: Control how the children are aligned horizontally.
+
+ Main Axis Alignment: Control how the children are spaced vertically.
+
+ Children: Add multiple widgets inside the column.
+
+Example 1: 
+
+           Column(
+           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+           crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+          	Icon(Icons.star),
+          	Icon(Icons.star_border),
+          	Icon(Icons.star_half),
+          	],
+            )
+
+Example 2: 
+
+        Column(
+           children : <Widget>[
+        	Expanded(
+        		child: Container(
+        		  color: Colors.blue,
+        		   child: Center(
+        			child: Text( 			‘This container expands’,
+        			‘to fill available space’
+        			),
+        		   ),
+        		),
+        	),
+        	Icon(Icons.more_vert),
+            ]
+        )
+      
 
 ### Text: 
 
