@@ -1,6 +1,6 @@
 # Flutter Widgets
 
-### Container:
+### i) Container:
 
   It provides flexibility and control your UIs layout and apperance.
 
@@ -26,6 +26,44 @@
         	child: Text(‘Hello, Container!’)
          )
 
+### ii) Row :    
+
+It is used to arrange child widgets in horizontal direction. Control alignment with mainAxisAlignment and crossAxisAlignment. Use Expand and Flexible for adaptive layouts.
+
+Key features:
+
+Alignment: Control how the children are aligned vertically.
+
+Main Axis Alignment: Control how the children are spaced horizontally.
+
+Children: Add multiple widgets inside the Row.
+
+Example1:
+
+                    Row(
+             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+             crossAxisAlignment: CrossAxisAlignment.Center,
+              Children: <Widget>[
+            	Icon(Icons.star),
+            	Icon(Icons.star_border),
+            	Icon(Icons.star_half),
+            	],
+              )
+              
+
+Example2:
+
+              Row(
+               children: <Widget>[
+                 Expanded(
+              	child: Text(‘This is a very long text should wrap or truncate’),
+                ),
+              Icon(Icons.more_horiz),
+              ]
+              )
+
+        
+
 ### Text: 
 
   It allows you to  display text various styles and alignments. 
@@ -45,7 +83,7 @@
                )
           )
 
-### Wrap:
+### iii) Wrap:
 
 It is used to arrange its child widgets dynamically in a horizontal or vertical direction.
 
