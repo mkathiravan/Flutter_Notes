@@ -106,7 +106,7 @@ Example 2:
         )
       
 
-### Text: 
+### iv) Text: 
 
   It allows you to  display text various styles and alignments. 
   
@@ -124,6 +124,29 @@ Example 2:
                color: Colors.blue
                )
           )
+
+### v) Image:
+
+ It is used to display images from different sources.
+
+ Key Features:
+
+  Image Sources: Load images from the asset bundle, network, memory or file.
+
+  Image Formats: Supports various image formats such as JPEG, PNG, GIF, WebP, etc.
+
+  Image Caching: Efficiently caches images to improve performance.
+
+  
+        Image.asset(‘assets/images/flutter_logo.png’)
+        
+        Image.network(‘https://example.com/image.jpg’)
+        
+        Image.asset(
+           ‘assets/images/flutter_logo.png’,
+           fit: BoxFit.cover,
+           alignment: Alignment.center
+        )
 
 ### iii) Wrap:
 
