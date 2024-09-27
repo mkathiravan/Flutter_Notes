@@ -91,3 +91,35 @@ Key Features:
               ])  
           )),  
         );  
+
+
+### DataTable:
+
+It is used to display tabular data in a series of rows and columns.
+
+Key Features:
+
+ Efficient Data Organization: Organizes data efficiently in rows and columns.
+
+ Sortable Columns: Supports sorting columns by tapping on their headers.
+
+ Customization: Allows customization of data cells, headers and more.
+
+
+            DataTable(
+            // datatable widget
+              columns: [
+                  // column to set the name
+                  DataColumn(label: Text('Col1'),),
+                  DataColumn(label: Text('Col2'),),
+              ],
+          
+              rows: [
+                  // row to set the values
+                  DataRow(cells: [
+                      DataCell(Text('ValCol1')),
+                      DataCell(Text('ValCol2')),
+                  ]),
+              ],
+          )
+            
