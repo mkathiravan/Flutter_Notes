@@ -1,5 +1,31 @@
 # Flutter Widgets
 
+### Container:
+
+  It provides flexibility and control your UIs layout and apperance.
+
+  Features:
+
+   Padding: Space inside the container around its child widget.
+
+   Margins: Space outside the container
+
+   Borders: Lines surrouding the container.
+
+   Background Color: Fill color for the container. 
+
+
+           Container(
+        	padding: EdgeInsets.all(16.0),
+        	margin: EdgeInsets.all(16.0),
+        	decoration: BoxDecoration(
+        		color: Colors.blue,
+        		border: Border.all(color: Colors.blue, width:2),
+         		borderRadius: BorderRadius.circular(8.0),
+        	),
+        	child: Text(‘Hello, Container!’)
+         )
+
 ### Text: 
 
   It allows you to  display text various styles and alignments. 
