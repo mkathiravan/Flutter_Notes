@@ -170,3 +170,45 @@ Example 2: Handling Expanded Events
             	// Add more widgets as needed
                 ],
             )
+
+**25) Flexible**:
+
+It is used within a Row, Column, or Flex container to control how a child widget flexes along main axis.
+
+Key Features:
+
+Flexibility: Determines how much space a child widget occupies within its parent row, column or flex container.
+
+Dynamic Sizing: Adjusts its size dynamically based on availbel space and flex factor.
+
+Content priority: Allows for prioritizing which widgets should flex it there's limited space.
+
+Example 1: Creating an Flexible Widget
+
+            Row(
+               children: <Widget>[
+            	Flexible(
+            	   child: Text(‘Flexible Text’)
+            	),
+            	// Add more widgets as needed
+            	],
+            )
+
+Example 2: Handling Flexible Events
+
+            Row(
+               children: <Widget>[
+            	Flexible(
+            		child: GestureDetector(
+            		onTap: () {
+            			// Add your onTap logic here
+            		},
+            	   child: Container(
+            		color: Colors.blue,
+            		height: 100
+            		),
+            	),
+            	),
+            	// Add more widgets as needed
+                ],
+            )
