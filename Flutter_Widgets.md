@@ -344,6 +344,42 @@ Example2:
       type: BottomNavigationBarType.shifting
     )
 
+### xiii)Drawer:
+
+It is a material design widget that slides in from the edge of the screen to provide navigation options or other settings.
+
+Key Features:
+
+Navigation: Offers additional navigation options, settings or actions.
+
+Edge Alignment: Typically aligned to the left or right edge of the screen.
+
+Gesture Interaction: Can be opened and closed with a swipe gesture.
+
+          Drawer(
+             child : ListView(
+          	padding: EdgeInsets.zero,
+          	children: <Widget>[
+          	  DrawerHeader(
+          	   child: Text(‘Custom Header’),
+          	   decoration: BoxDecoration(
+          		color: Colors.green,
+          	),
+          	), 	ListTile(
+          		title: Text(‘Custom Item 1’),
+          		onTap: () {
+          			// Add your onTap logic here
+          	     },
+          	),        ListTile(
+          		title: Text(‘Custom Item 2 ’),
+          		onTap: () {
+          		 // Add your onTap logic here
+          		},
+          	),
+                ],
+             ),
+          )
+
 ### iii) Wrap:
 
 It is used to arrange its child widgets dynamically in a horizontal or vertical direction.
