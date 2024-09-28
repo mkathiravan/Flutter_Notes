@@ -1,6 +1,6 @@
 # Flutter Widgets
 
-### i) Container:
+### 1) Container:
 
   It provides flexibility and control your UIs layout and apperance.
 
@@ -26,7 +26,7 @@
         	child: Text(‘Hello, Container!’)
          )
 
-### ii) Row :    
+### 2) Row :    
 
 It is used to arrange child widgets in horizontal direction. Control alignment with mainAxisAlignment and crossAxisAlignment. Use Expand and Flexible for adaptive layouts.
 
@@ -63,7 +63,7 @@ Example2:
               )
 
 
-### iii) Column:      
+### 3) Column:      
 
 It is used to arrange child widgets in vertical direction.
 
@@ -106,7 +106,7 @@ Example 2:
         )
       
 
-### iv) Text: 
+### 4) Text: 
 
   It allows you to  display text various styles and alignments. 
   
@@ -125,7 +125,7 @@ Example 2:
                )
           )
 
-### v) Image:
+### 5) Image:
 
  It is used to display images from different sources.
 
@@ -148,7 +148,7 @@ Example 2:
            alignment: Alignment.center
         )
 
-### vi) Icon:
+### 6) Icon:
 
 It is used to display icon from various icon libraries.
 
@@ -172,7 +172,7 @@ Icon Alignment: Align icon with their containers horizontally and vertically.
           	color: Colors.blue
           )
 
-### vii) Raised Button:    
+### 7) Raised Button:    
 
 It is used to create buttons with a raised apperance.
 
@@ -197,7 +197,7 @@ Customization: Customize the button's color, text and shape.
           )
 
 
-### viii) Flat Button:    
+### 8) Flat Button:    
 
 It is used to create text only button with no elevation.
 
@@ -223,7 +223,7 @@ Cutomization: Customize the button's text, color, and onPressed behaviour.
                ),
             )
 
-### ix) FloatingActionButton:
+### 9) FloatingActionButton:
 
 It is used to create circular buttons that are typically placed in the bottom right corner of the screen.
 
@@ -249,7 +249,7 @@ Key Features:
         )
 
 
-### x) Scaffold:
+### 10) Scaffold:
 
 It is a layout structure for the basic visual material design layout structure of the flutter app.
 
@@ -276,7 +276,7 @@ Floating Action Button: Optional button that floats above the body content.
         ),
         )
 
-### xi) AppBar:
+### 11) AppBar:
 
  It is a material design widget that represent the top app bar in a Flutter app.
 
@@ -302,7 +302,7 @@ Floating Action Button: Optional button that floats above the body content.
             )
 
 
-### xii)BottomNavigationBar:
+### 12)BottomNavigationBar:
 
 It is a material design widget that displays a horizontal row of tabs at the bottom of the screen.
 
@@ -344,7 +344,7 @@ Example2:
       type: BottomNavigationBarType.shifting
     )
 
-### xiii)Drawer:
+### 13)Drawer:
 
 It is a material design widget that slides in from the edge of the screen to provide navigation options or other settings.
 
@@ -380,7 +380,7 @@ Gesture Interaction: Can be opened and closed with a swipe gesture.
              ),
           )
 
-### xiv)ListView:
+### 14)ListView:
 
 It is a scrollable list of widgets arragned linearly.
 
@@ -434,7 +434,7 @@ Example 3: Handling ListView Events
         )
 
 
-### xv)GridView:
+### 15)GridView:
 
 It is a scrollable grid of widget arranged in rows and columns.
 
@@ -497,7 +497,7 @@ Example 3: Handling GridView Events
             )
 
 
-### xvi) Stack:
+### 16) Stack:
 
 It is a layout widget that allows you to stack multiple widgets on top of each other.
 
@@ -558,7 +558,7 @@ Example 1: Creating a Stack
            )
       )
 
-### xvii) Positioned:
+### 17) Positioned:
 
 It is used within a Stack to position its child widget relative to the edges of the stack.
 
@@ -620,7 +620,7 @@ Example 3: Handling Positioned Event
 
 
 
-### xviii) Wrap:
+### 18) Wrap:
 
 It is used to arrange its child widgets dynamically in a horizontal or vertical direction.
 
@@ -646,7 +646,7 @@ Key Features: Dynamic arrangement, Flexible layout, Customizataion.
      )
 
 
-### xix) Table:
+### 19) Table:
 
 It is used to organize data in a grid of rows and columns.
 
@@ -694,7 +694,7 @@ Key Features:
         );  
 
 
-### xx) DataTable:
+### 20) DataTable:
 
 It is used to display tabular data in a series of rows and columns.
 
