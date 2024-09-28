@@ -380,6 +380,59 @@ Gesture Interaction: Can be opened and closed with a swipe gesture.
              ),
           )
 
+### xiv)ListView:
+
+It is a scrollable list of widgets arragned linearly.
+
+Key Features:
+
+Dynamic Content: Allows for the display of a large number of items without using too much memory.
+
+Scrollable: Supports both veritical and horizontal scrolling.
+
+Customization: Can be customized with different types of children and layout.
+
+Example 1: Creating a simple ListView
+
+            ListView(
+           children: <Widget>[       ListTile(title: Text(‘Item 1’)),
+              ListTile(title: Text(‘Item 2’)),
+              ListTile(title: Text(‘Item 3’)),
+            ],
+        )
+
+Example 2: Customizing ListView
+
+          ListView.separated(
+              separatorBuilder:(
+          	  context, index) =>Divider(),
+                itemCount: 10,
+                itemBuilder: (context, indext){
+          	return ListTile(
+          	  title: Text(
+          		‘Item ${index +1}’
+          	  ));
+          	}
+          	)
+
+Example 3: Handling ListView Events
+
+        ListView(
+           children: <Widget>[
+        	ListTile(
+        	  title: Text(‘Item 1’),
+        	 onTap: () {
+        	   // Add your onTap logic here
+        	},
+        	),   ListTile(
+        	title: Text(‘Item 2’),
+        	onTap: () {
+        	    // Add your on Tap logic here
+        	}
+        	),
+        	],
+        )
+
 ### iii) Wrap:
 
 It is used to arrange its child widgets dynamically in a horizontal or vertical direction.
