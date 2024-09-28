@@ -95,3 +95,36 @@ Example 3: Handling Padding Events
             	)
             	)
             )
+
+**23) Center**:
+
+It is used to center its child widget within itself or its parent widget.
+
+Key Features:
+
+Alignment: Center its child widget both horizontally and vertically.
+
+Flexible: Can be used to center any type of widget.
+
+Parent Alignment: Can also be used to center itself within its parent widget.
+
+Example 1: Creating a Padding Widget
+
+             Center(
+                child: Text(‘Centered Text’,)
+            )
+
+Example 2: Handling Center Events
+
+            Center(
+                child: 	GetstureDetector(
+                 onTap: () {
+            	  // Add your onTap logic here
+            	},
+               child: Container(
+            	color: Colors.blue,
+            	width: 100,
+            	height: 100
+             ),
+            ),
+            )
