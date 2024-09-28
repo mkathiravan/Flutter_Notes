@@ -433,6 +433,70 @@ Example 3: Handling ListView Events
         	],
         )
 
+
+### xv)GridView:
+
+It is a scrollable grid of widget arranged in rows and columns.
+
+Key Features:
+
+Flexibility: Support both fixed and dynamic grid layout.
+
+Scrollable: Allows for scrolling if the content exceeds the available space.
+
+Customization: Can be customized with various grid configurations and layouts.
+
+Example 1: Creating simple GridView
+
+          GridView.count(
+              crossAxisCount: 2, 
+              children: List.generate(6, (index){
+          	return Center(
+          	    child: Text(’Item $index’),
+          	)
+             } 
+          ) 
+
+          
+Example 2: Customizing GridView
+
+          GridView.builder(
+             gridDelegate:
+          	SliverGridDelegateWithFixedCrossAxisCount(
+          	   crossAxisCount: 3,
+          	   crossAxisSpacing: 10.0,
+          	   mainAxisSpacing: 10.0,
+             ),
+            itemCount: 9,
+            itemBuilder: (context, index){
+          	return Container(
+          	    color: Colors.blue,
+          	    child: Center(
+          		child: Text(‘Item $index’),
+          	 )
+          	)
+           }
+          )
+
+Example 3: Handling GridView Events
+            
+            GridView.count(
+              crossAxisCount: 2,
+              children: List.generate(4, (index) {
+            	return GestureDetector(
+            		onTap: () {
+            			// Add your onTap logic here
+            		}, 	child: Container(
+            		color: Colors.green,
+            		child: Center(
+            		  child: Text(‘Item $index’),
+            		),
+            	),
+            	);
+            }),
+            )
+
+
 ### iii) Wrap:
 
 It is used to arrange its child widgets dynamically in a horizontal or vertical direction.
