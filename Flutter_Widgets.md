@@ -223,6 +223,59 @@ Cutomization: Customize the button's text, color, and onPressed behaviour.
                ),
             )
 
+### ix) FloatingActionButton:
+
+It is used to create circular buttons that are typically placed in the bottom right corner of the screen.
+
+Key Features:
+
+ Prominence: Stands out from other UI elements making it ideal for primary actions.
+
+ Elevation: Provides a shadow to give a button a floating apperance.
+
+ Customization: Customize the button colors, icon and onPressed behaviour.
+
+
+ 
+        FloatingActionButton(
+            onPressed: (){
+        	// Add your onPressed logic here
+           },
+          backgroundColor: Colors.blue,
+          shape: RoundedRectangleBorder(
+            borderRadius: BordeerRaidus.circular(10.0),
+           ),
+          child: Icon(Icons.add),
+        )
+
+
+### x) Scaffold:
+
+It is a layout structure for the basic visual material design layout structure of the flutter app.
+
+Key Features:
+
+App Bar: Provides a top bar for displaying the title and actions.
+
+Body: Defines the primary content of the screen.
+
+Floating Action Button: Optional button that floats above the body content.
+
+        Scaffold(
+          appBar: AppBar(
+             title: Text(‘My App’),
+         ),
+        body: Center(
+           child: Text(‘Hello, Flutter!’),
+        ),
+        floatingActionButton: FloatingActionButton(
+          onPressed() {
+             // Add your onPressed logic here
+         },
+         child: Icon(Icons.add)
+        ),
+        )
+
 ### iii) Wrap:
 
 It is used to arrange its child widgets dynamically in a horizontal or vertical direction.
