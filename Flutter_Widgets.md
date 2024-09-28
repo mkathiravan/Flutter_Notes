@@ -171,7 +171,31 @@ Icon Alignment: Align icon with their containers horizontally and vertically.
           	size: 48.0,
           	color: Colors.blue
           )
-        
+
+### vii) Raised Button:    
+
+It is used to create buttons with a raised apperance.
+
+Key Features:
+
+Elevation: Adds a shadow to the button, giving it a raised apperance.
+
+Tap Feedback: Provides visual feedback when the button is pressed.
+
+Customization: Customize the button's color, text and shape.
+
+
+        RaisedButton(
+           onPressed: (){
+        	// Add your onPressed logic here
+        	},
+            color: Colors.blue,
+            shape: RoundedRectangleBorder(
+        	borderRadius: BorderRadius.Circular(10.0),
+        	),
+             child: Text(‘Press Me’)	
+          )
+
 
 ### iii) Wrap:
 
