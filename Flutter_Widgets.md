@@ -276,6 +276,31 @@ Floating Action Button: Optional button that floats above the body content.
         ),
         )
 
+### xi) AppBar:
+
+ It is a material design widget that represent the top app bar in a Flutter app.
+
+ Key Features:
+
+ Title: Displays the title of the app.
+
+ Actions: Optional action such as buttons, icons, or menus.
+
+ Bottom: Additional widgets placed below the app bar, such as tabs.
+
+ 
+          AppBar(
+              title: Text(‘My App’),
+              backgroundColor: Colors.blue,
+              elevation: 0.0,
+               leading:  IconButton(
+          	icon: Icon(Icons.menu),
+          	onPressed: () {
+          		// Add your menu logic here
+          	},
+          	),
+            )
+
 ### iii) Wrap:
 
 It is used to arrange its child widgets dynamically in a horizontal or vertical direction.
