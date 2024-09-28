@@ -128,3 +128,45 @@ Example 2: Handling Center Events
              ),
             ),
             )
+
+**24) Expanded**:
+
+It is used within a Row, Column, or Flex container to expand its child widget to fill the available space along the main axis.
+
+Key features:
+
+Flexibility: Expands its child widget to fill the available space along the main axis of the parent Row, Column or Flex.
+
+Dynamic Sizing: Adjusts its size based on the available space and the sizes of the other widgets within the container.
+
+Content Priority: Allows for prioritizing which widgets should expand if there's limited space.
+
+Example 1: Creating an Expanded Widget
+
+            Row(
+              children: <Widget>[
+                Expanded(
+                     child: Text(‘Expanded Text’),
+            	),
+               // Add more widgets as needed
+            ],
+            )
+
+Example 2: Handling Expanded Events
+
+            Row(
+               children: <Widget>[
+            	Expanded(
+            		child: GestureDetector(
+            		onTap: () {
+            			// Add your onTap logic here
+            		},
+            	   child: Container(
+            		color: Colors.blue,
+            		height: 100
+            		),
+            	),
+            	),
+            	// Add more widgets as needed
+                ],
+            )
