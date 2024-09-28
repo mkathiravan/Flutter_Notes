@@ -497,6 +497,68 @@ Example 3: Handling GridView Events
             )
 
 
+### xvi) Stack:
+
+It is a layout widget that allows you to stack multiple widgets on top of each other.
+
+Key Features:
+
+Layering: Widgets are positioned relative to the edges of the stack can can overlap.
+
+Flexibility: Supports a variety of configurations for precise control over widget positioning.
+
+Z-ordering: Widgets can be ordered in the stack based on their Z-axis position.
+
+Example 1: Creating a Stack
+
+          Stack(
+              children: <Widget>[
+                Container(
+          	   color: Colors.red,
+          	   height: 200,
+          	),
+          	Positioned(
+          	  top: 50,
+          	  left: 50,
+          	  child: Text(
+          		‘Hello, Flutter’,
+          		 style: TextStyle(fontSize: 20)),
+          		)
+          	)		
+             ] 
+          )
+
+ Example 2: Customizing Stack        
+
+         Stack(
+            alignment: Alignment.center,
+            children: <Widget>[
+        	Container(
+        	    color: Colors.red,
+        	    height: 200,
+        	),
+        	Container(
+        	   color: Colors.green,
+        	    width: 300,
+        	     height: 150,
+        	)
+             ]
+        )
+
+ Example 3: Handling Stack Events
+
+           GestureDetector(
+      	onTap: () {
+      	 // Add your onTap logic here
+            },
+          child: Stack(
+      	children: <Widget>[
+      	    // Stack children
+      	]
+           )
+      )
+
+
 ### iii) Wrap:
 
 It is used to arrange its child widgets dynamically in a horizontal or vertical direction.
