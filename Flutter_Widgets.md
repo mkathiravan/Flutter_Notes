@@ -197,6 +197,32 @@ Customization: Customize the button's color, text and shape.
           )
 
 
+### viii) Flat Button:    
+
+It is used to create text only button with no elevation.
+
+Key Features:
+
+Simplicity: Displays text without additional adornments like shadows.
+
+Tap Feedback: Provides visual feedback when the button is pressed.
+
+Cutomization: Customize the button's text, color, and onPressed behaviour.
+
+
+
+              FlatButton(
+             onPressed: (){
+          	// Add your onPressed logic here
+          	},
+               child: Text(‘Press Me’, 
+          	style: TextStyle(
+          	  color: Colors.blue,
+          	  fontSize: 18.0,
+          	),
+               ),
+            )
+
 ### iii) Wrap:
 
 It is used to arrange its child widgets dynamically in a horizontal or vertical direction.
