@@ -558,8 +558,69 @@ Example 1: Creating a Stack
            )
       )
 
+### xvii) Positioned:
 
-### iii) Wrap:
+It is used within a Stack to position its child widget relative to the edges of the stack.
+
+Key Features:
+
+Relative Positioning: Positions its child widget relative to the edges of the stack.
+
+Flexible: Supports  both absolute and fractional positioning.
+
+Z-ordering: Allows for precise control over the stacking order of widgets within the stack.
+
+Example 1: Creating a Positioned Widget
+
+        Stack(
+            children: <Widget>[
+        	Positioned(
+        	     top: 0,
+        	     left: 0,
+        	     child: Text(‘Top Left’)
+        	  ),
+        	// Add more Positioned widgets as needed
+        	]
+        )
+
+ Example 2: Customizing Positioned Widget
+
+
+           Stack(
+             children: <Widget>[
+          	Positioned(
+          	   bottom: 0,
+          	   right: 0,
+          	   width: 100,
+          	   height: 100.
+          	   child: Container(color: Colors.blue)
+          	)
+          ],		
+          )
+
+Example 3: Handling Positioned Event
+          
+          Stack(
+             children: <Widget>[
+          	Positioned(
+          	   top: 0,
+          	   left: 0,
+          	  child: GestureDetector(
+          		onTap:() {
+          			// Add your onTap logic here
+          		}, 	   child: Container(
+          		color: Colors.red,
+          		width: 50,
+          		height: 50
+          	   ),
+          	),
+          	),
+          	],
+          )
+
+
+
+### xviii) Wrap:
 
 It is used to arrange its child widgets dynamically in a horizontal or vertical direction.
 
@@ -585,7 +646,7 @@ Key Features: Dynamic arrangement, Flexible layout, Customizataion.
      )
 
 
-### Table:
+### xix) Table:
 
 It is used to organize data in a grid of rows and columns.
 
@@ -633,7 +694,7 @@ Key Features:
         );  
 
 
-### DataTable:
+### xx) DataTable:
 
 It is used to display tabular data in a series of rows and columns.
 
