@@ -301,6 +301,49 @@ Floating Action Button: Optional button that floats above the body content.
           	),
             )
 
+
+### xii)BottomNavigationBar:
+
+It is a material design widget that displays a horizontal row of tabs at the bottom of the screen.
+
+Key Features:
+
+Navigation: Allows users to switch between different screens or views within the app.
+
+Icons: Each tab typically displays an icon and an optional label.
+
+State Management: Automatically manages the selected tab state.
+
+Example1:
+
+            BottomNavigationBar(
+            items: <BottomNavigationBarItem>[
+        	BottomNavigationBarItem(
+        	    icon: Icon(Icons.home),
+        	    label: ‘Home’,
+        	),
+        	BottomNavigationBarItem(
+        	    icon: Icon(Icons.search),
+        	    label: ‘Search’,
+        	), 	BottomNavigationBarItem(
+        	    icon: Icon(Icons.person),
+        	    label: ‘Profile’,
+        	),
+           ],
+        )
+        
+Example2:
+    
+        BottomNavigationBar(
+       items:  <BottomNavigationBarItem>[
+    	// BottomNavigationBarItems..
+      ],
+      currentIndex: _selectedIndex,
+      selectedItemColor: Colors.blue,
+      onTap: _onItemTapped,
+      type: BottomNavigationBarType.shifting
+    )
+
 ### iii) Wrap:
 
 It is used to arrange its child widgets dynamically in a horizontal or vertical direction.
