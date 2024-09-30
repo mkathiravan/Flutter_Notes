@@ -212,3 +212,15 @@ Example 2: Handling Flexible Events
             	// Add more widgets as needed
                 ],
             )
+
+**26) Spacer**:
+
+It is used within a row or column to create flexible space between widgets, causing them to expand to fill the available space.
+
+Key Features:
+
+1. Flexibility: Automatically adjusts its size to fill the avialble space.
+
+2. Dynamic Sizing: Expands or shrinks based on the space availble in its parent Row or Column.
+
+3. Layout Control: Allows for easy creation of responsive layout with variable spacing.
