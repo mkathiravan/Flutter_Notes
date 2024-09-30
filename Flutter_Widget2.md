@@ -284,3 +284,54 @@ Example 2: Using SizedBox as Spacer
             	),
             ],
             )
+
+**27) Divider**:
+
+It is used to create a horizontal line that visually separates content within a Column, ListView or Row.
+
+Key Features:
+
+i) Visual Separation: Adds a visible line to separate content.
+
+ii) Customization: Supports customization of color, thickness and identication.
+
+iii) Flexibility: Can be used with various layout widgets to create a clear visual hierarchy.
+
+Example 1: Creating a Divider Widget
+
+            Column(
+                children: <Widget>[
+            	Container(
+            	   color: Colors.green,
+            	   width: 100,
+            	   height: 100
+            	),
+                    Divider(),
+            	Container(
+            		color: Colors.blue,
+            		width: 100,
+            		height: 100
+            	),
+            ],
+            )
+
+Example 2: Customizing Divider
+
+            Column(
+                children: <Widget>[
+            	Container(
+            	   color: Colors.green,
+            	   width: 100,
+            	   height: 100
+            	),
+                    Divider(
+            	  color: Colors.red,
+            	  thickness: 2,
+                    ),
+            	Container(
+            		color: Colors.blue,
+            		width: 100,
+            		height: 100
+            	),
+            ],
+            )
