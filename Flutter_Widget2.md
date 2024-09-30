@@ -429,3 +429,35 @@ Example 2: Customiziing ListTile
                    // Add your onTap logic here
                   }
             )
+
+**30) InkWell**:
+
+It is used to add touch effects to its child widget, such as ripples, when tapped by the user.
+
+Key Features:
+
+i) Touch Feedback: Provides visual feedback to the user when tapped.
+
+ii) Interactive: Can be used with various widgets to make them interactive.
+
+iii) Customization: Supports customization of ripple color, splash radius, and more.
+
+Example 1: Creating a InkWell Widget
+
+            InkWell(
+               onTap: () {
+                   // Add your onTap logic here
+               },
+               child: Text('Tap Me')
+            )
+
+Example 2: Customizing InkWell
+
+             InkWell(
+               onTap: () {
+                   // Add your onTap logic here
+               },
+               splashColor: Colors.red,
+               splashRadius: 30
+               child: YourWidget()
+            )
