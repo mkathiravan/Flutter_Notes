@@ -398,3 +398,34 @@ Example 1: Creating a Card Widget
                   )
                   ],
                   )
+
+**29) ListTile**:
+
+It is used to represent a single fixed-height row that typically contains some text, heading icon, and trailing icon or widget.
+
+Key Features:
+
+i) Structured Layout: Provides a structured layout for displaying information in a list format.
+
+ii) Customization: Supports customization of leading and trailing icons, text, and more.
+
+iii) Interactive: Can be made interactive with onTap callback.
+
+Example 1: Creating a ListTile Widget.
+
+            ListTile(
+                  leading: Icon(Icons.account_circle),
+                  title: Text('John Doe'),
+                  subtitle: Text('john.doe@example.com')
+            )
+
+Example 2: Customiziing ListTile    
+
+            ListTile(
+                  leading: Icon(Icons.account_circle),
+                  title: Text('Photos'),
+                  trailing: Icon(Icons.arrow_forward),
+                  onTap:(){
+                   // Add your onTap logic here
+                  }
+            )
