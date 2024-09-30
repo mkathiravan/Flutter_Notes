@@ -335,3 +335,66 @@ Example 2: Customizing Divider
             	),
             ],
             )
+
+
+**28) Card**: 
+
+It is used to create a material design card containing contents and actions in a consistent format.
+
+Key Features:
+
+i) Structured Layout: Provides a consistent layout for content and actions.
+
+ii) Elevation: Adds a drop shadow to simulate a 3D apperarance.
+
+iii) Customization: Supports customization of content, elevation, shape and more.
+
+
+Example 1: Creating a Card Widget
+
+                  Column(
+                      children: <Widget>[
+                  	Padding: EdgeInsets.all(20),
+                  	child: Container(
+                  	  color: Colors.blue,
+                  	  height: 100,
+                  	 child: Card(
+                  	   child: Column(
+                  	    children: <Widget>[
+                  	     ListTile(
+                  		title: Text(‘Card Title’),
+                  		subtitle: Text(‘Card Descrption’),
+                  	)
+                  	]	
+                  	)
+                  	)
+                  	)
+                  ],
+                  )
+
+  Example 2: Customizing Card
+
+                    Column(
+                      children: <Widget>[
+                  	Padding: EdgeInsets.all(20),
+                  	child: Container(
+                  	  color: Colors.blue,
+                  	  height: 100,
+                  	 child: Card(
+                  		elevation: 8,
+                  		shape: RoundedRectangleBorder(
+                  		 borderRadius: BorderRadius.circular(16),
+                  		),
+                  	   child: Column(
+                  	    children: <Widget>[
+                  	     ListTile(
+                  		title: Text(‘Card Title’),
+                  		subtitle: Text(‘Card Descrption’),
+                  	),
+                  	],	
+                  	)
+                  	)
+                  	)
+                  )
+                  ],
+                  )
