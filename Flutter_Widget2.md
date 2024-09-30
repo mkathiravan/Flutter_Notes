@@ -245,3 +245,42 @@ Example 2: Using Spacer in a Column
             	Text(‘Bottom Text’)
             	]
             )
+
+
+**26) SizedBox**:
+
+It is used to constrain the size of its child widget to a specific width and height.
+
+Key Features:
+
+Size Control: Sets the width and height of its child widget fo fixed dimensions.
+
+Empty Spacer: Can also be used as an empty spacer to create space between widgets.
+
+Precise Sizing: Provides precise control over the size of widgets within layouts.
+
+Example 1: Creating SizedBox Widget
+
+            SizedBox(
+               width: 200,
+               height: 100,
+               child: Your Widget()
+            )
+
+Example 2: Using SizedBox as Spacer
+
+            Column(
+                children: <Widget>[
+            	Container(
+            	   color: Colors.green,
+            	   width: 100,
+            	   height: 100
+            	),
+                    SizedBox(height: 20),
+            	Container(
+            		color: Colors.red,
+            		width: 100,
+            		height: 100
+            	),
+            ],
+            )
