@@ -224,3 +224,24 @@ Key Features:
 2. Dynamic Sizing: Expands or shrinks based on the space availble in its parent Row or Column.
 
 3. Layout Control: Allows for easy creation of responsive layout with variable spacing.
+
+
+Example 1: Using Spacer in a Row
+
+            Row(
+               children: <Widget>[
+            	Flexible(
+            	  child: Text(‘Flexible Text’)
+            	)
+            	]
+            )
+
+Example 2: Using Spacer in a Column
+
+            Column(
+               children: <Widget>[
+            	Text(‘Top Text’),
+            	Spacer(),
+            	Text(‘Bottom Text’)
+            	]
+            )
