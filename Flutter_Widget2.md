@@ -516,6 +516,82 @@ Example 1: Applying Transformations
 
         body: Center(
               child: Transform.rotate(
-                    
-              )
-        )
+                    angle: pi / 4,
+                    child: Container(
+                       color: Colors.blue,
+                       width: 100,
+                       height: 100,
+                       child: Center(
+                        child: Text(
+                           'Rotated',
+                           style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 18,
+                           ),
+                        ),
+                       ),
+                    ),
+                    ),
+                ),
+
+**32) Opacity**:
+
+--> It is used to make its child widget partially transparent, allowing you to control its opacity level.
+
+Key Features:
+
+i) Transparency: Adjusts the transparency level of its child widget.
+
+ii) Visual Effects: Allows you to create subtle visual effects such as fading in and out.
+
+iii) Efficiency: Maintains performance by avoiding the need for costly compositing operations.
+
+
+Example 1: Applying Opacity
+
+                  body: Center(
+                     child: Opacity(
+                        opacity: 0.5,
+                        child: Container(
+                          color: Colors.blue,
+                          width: 100,
+                          height: 100,
+                          child: Center(
+                            child: Text(
+                               'Half Visible',
+                               style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 18,
+                               ),
+                            ),
+                          ),
+                        ),
+                     ),
+                  ),
+
+Example 2: Applying Animated Opacity
+
+--> Animate opacity using the AnimatedOpacity widget, which automatically animates the opacity over time. This example shows how to create an AnimatedOpacity widget with an animation duration of 1 second.
+
+            AnimatedOpacity(
+               opactiy: _opacityValue,
+               duration: Duration(seconds: 1),
+               child: Container(
+                     color: Colors.blue,
+                     width: 100,
+                     height: 100,
+                        child: Center(
+                            child: Text(
+                               'Half Visible',
+                               style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 18,
+                               ),
+                            ),
+                  ),
+            ),
+            SizedBox(height: 20),
+            ElevatedButton(onPressed: () { setState(() { _opacityValue = _opacityValue == 1.0 ? 0.0 : 1.0 ;}); },
+            child: Text('Toggle Opacity'),
+            );
+            
