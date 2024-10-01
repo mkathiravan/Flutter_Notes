@@ -461,3 +461,61 @@ Example 2: Customizing InkWell
                splashRadius: 30
                child: YourWidget()
             )
+
+**31) GestureDetector**:
+
+It is used to detect various gestures, such as taps, drags, and long presses, on its child widget.
+
+Key Features:
+
+i) Gesture Recognition: Detects various touch gestures, including taps, drags and long presses.
+
+ii) Interactive: Enables interaction with widgets through touch input.
+
+iii) Customization: Supports customization of gesture behavior and callbacks.
+
+
+Example 1: Creating a GestureDetector Widget
+
+         GestureDetector(
+               onTap:(){
+                     // Add your onTap logic here
+               },
+               child: YourWidget(),
+         )
+
+Example 2: Gesture Detection Callbacks
+
+         GestureDetector(
+            onTap:(){
+                  //Add your onTap logic here
+            },
+            onDoubleTap:() {
+                  // Add your onDoubleTap logic here
+            },
+            onLongPress:(){
+                  // Add your onLongPress logic here
+            },
+            child: YoutWidget(),
+         )
+
+**32) Transform**:
+
+It is used to apply various 2D tranformations, such as rotation, scaling, and translation, to its child widget.
+
+Key Features:
+
+i) Tranformation: Applies 2D transformations to its child widget.
+
+ii) Animations: Supports animated transformations for creating dynamic UI effects.
+
+iii) Customization: Allow customization of transformation properties such as rotation angle, scale factor, and translation offsets.
+
+
+Example 1: Applying Transformations
+
+        body: Center(
+              child: Transform.rotate(
+                    
+              )
+        )
