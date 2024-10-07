@@ -595,3 +595,44 @@ Example 2: Applying Animated Opacity
             child: Text('Toggle Opacity'),
             );
             
+
+**33) Animated Container**:
+
+ --> It is used to animate the transformation of its properties, such as size, position, and color, over a specified duration.
+
+Key Features:
+
+i) Dynamic Animation: Animates changes to its properties smoothly over time.
+
+ii) Customization: Supports customization of animation properties such as duration, curve and more.
+
+iii) Efficiency: Automatically manages animations and updates efficiently.
+
+
+Example 1: Applying AnimatedContainer
+
+         AnimatedContainer(
+            duration: Duration(seconds: 1),
+            color: _color,
+            width: _width,
+            height: _height,
+            child: Center(
+               child: Text(
+                   'Animating',
+                   color: Colors.white,
+                   fontSize: 18,
+               ),
+            ),
+         ),
+        ),
+        SizedBox(height: 20),
+        ElevatedButton(
+          onPressed: () {
+            setState((){
+              _color = _color == Colors.blue ? Colors.red: Colors.blue;
+              _width = _width == 100.0 ? 200.0 : 100.0;
+              _height = _height == 100.0 ? 200.0 : 100.0;
+            });
+          },
+          child: Text('Animate Container')
+       )
