@@ -636,3 +636,54 @@ Example 1: Applying AnimatedContainer
           },
           child: Text('Animate Container')
        )
+
+
+**34) Fade Transition**:
+
+--> It is used to animate the opacity of its child widget, creating smooth fade in and fade out animations.
+
+Key Features:
+
+i) Opacity Animation: Animates the opacity of its child widget smoothly over time.
+
+ii) Customization: Supports customization of animation properties such as duration, curve and more.
+
+iii) Efficiency: Automatically manages animations and updates efficiently.
+
+
+Example 1: Applying FadeTransition
+
+       child: FadeTransition(
+         opacity: _animation,
+         child: Container(
+           color: Colors.blue,
+           width: 100,
+           height: 100,
+           child: Center(
+               child: Text(
+                  'Fading',
+                  style: TextStyle(
+                     color: Colors.white,
+                     fontSize: 18,
+                  )
+               )
+           )
+         )
+       )
+
+Example 2: Customizing FadeTransition
+
+     @Override
+     void initState()
+     {
+       super.initState();
+       _controller = AnimatedController(
+         duration: const Duration(seconds: 2),
+         vsync: this,
+       ).. repeat(reverse: true);
+
+       _animation = CurvedAnimation(
+         parent: _controller,
+         curve: Curves.easeInOut,
+       )
+     }
